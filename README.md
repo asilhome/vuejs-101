@@ -37,4 +37,4 @@ vue create <project>
 - Vue CLI
 
 ## References
-[Vue.js](https://vuejs.org/), 
+[Vue.js](https://vuejs.org/), [Vue API](https://vuejs.org/v2/api/)
