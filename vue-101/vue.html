@@ -111,7 +111,7 @@
 
     <script>
         // vue component registration
-        Vue.component('post', {
+        var Post = Vue.component('post', {
             props: ['item'],
             template: '#post-item'
         });
@@ -119,6 +119,9 @@
         // app Vue instance
         var app = new Vue({
             el: '#app',
+            components : {
+                'post': Post
+            },
             data: {
                 id: '',
                 title: '',
