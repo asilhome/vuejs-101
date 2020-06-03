@@ -55,6 +55,19 @@
             grid-template-columns: auto 640px auto;
         }
     </style>
+
+    <script type="text/x-template" id="post-item">
+        <div>
+            <div>
+                <h5>{{item.title}}</h5>
+                <p>{{item.body}}</p>
+            </div>
+            <div>
+                <button type="button" @click="$emit('edit-item', item)">Edit</button>
+                <button type="button" @click="$emit('delete-item', item)">Delete</button>
+            </div>
+        </div>    
+    </script>
 </head>
 
 <body>
@@ -73,13 +86,8 @@
                 </thead>
                 <tbody>
                     <tr v-for='(item, index) in filteredItems' :key='index'>
-                        <td>
-                            <h5>{{item.title}}</h5>
-                            <p>{{item.body}}</p>
-                        </td>
-                        <td align="center">
-                            <button type="button" @click="editItem(item)">Edit</button>
-                            <button type="button" @click="deleteItem(item)">Delete</button>
+                        <td colspan="2">
+                            <post :item="item" @edit-item='editItem' @delete-item='deleteItem' />
                         </td>
                     </tr>
                 </tbody>
@@ -102,6 +110,12 @@
     </div>
 
     <script>
+        // vue component registration
+        Vue.component('post', {
+            props: ['item'],
+            template: '#post-item'
+        });
+
         // app Vue instance
         var app = new Vue({
             el: '#app',
