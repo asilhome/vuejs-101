@@ -1,11 +1,13 @@
 # Vue.js 101
-## Resources
-- [Vue.js](https://vuejs.org/)
+## Intro
+Convert a static page to dynamic page with Vue.js.
 
-## 1. Vue Instance
-Convert a static page to dynamic page.
+### 1. Vue Instance
+```
+Vue()   # root of an application
+```
 
-### Topics
+#### Topics
 - Form, add, update, delete, load, search
 - Setup using CDN
 - Debugging tools
@@ -14,20 +16,25 @@ Convert a static page to dynamic page.
 - Events
 - v-model
 
+### 2. Vue Components
 ```
-new Vue()   # root of an application
+Vue.component()
 ```
 
-## 2. Vue Components
-```
-Vue.component
-```
+#### Topics
 - Registration using x-template
+- Global & local registration
 - Template, props, emit
 
-## 3. Single File Component
-- Vue CLI
+## 102
 
+### 3. Single File Component
 ```bash
 vue create <project>
 ```
+
+#### Topics
+- Vue CLI
+
+## References
+[Vue.js](https://vuejs.org/), 
