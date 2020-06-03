@@ -10,7 +10,7 @@ Convert a static page to dynamic page.
 - Setup using CDN
 - Debugging tools
 - Data, computed, methods & lifecycle
-- Template syntax, basic avascript (array)
+- Template syntax, basic javascript (array)
 - Events
 - v-model
 
