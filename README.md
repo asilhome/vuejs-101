@@ -1,6 +1,9 @@
 # Vue.js 101
-## Intro
-Turn **html** to *dynamic* page just using `CDN`.
+Learn Vue.js gradually starting from basic html up to project scaffolding.
+
+## 101
+### 1. Vue Instance
+Learn how to turn **html** into a *dynamic* page just using `CDN`.
 - debugging tools
 - properties (Data), computed, methods & lifecycle
 - template syntax, basic javascript (array)
@@ -8,12 +11,12 @@ Turn **html** to *dynamic* page just using `CDN`.
 - v-model
 - demonstrate add, update, delete, load, search functions
 
-### 1. Vue Instance
 ```
 Vue()   # root of an application
 ```
 
 ### 2. Vue Components
+Learn how to create a simple component.
 - register component using x-template
 - global & local component
 - template, props, emit
@@ -32,14 +35,14 @@ npm install -g @vue/cli @vue/cli-service-global
 ```
 
 ### 3. Single File Component
-Migrate components into separate `vue` files.
+Learn to migrate components into separate `vue` files.
 
 ```bash
 vue serve
 ```
 
 ## 103
-Project mode will full tooling.
+Project mode with full tooling.
 
 ### 4. Project Scaffolding
 ```bash
