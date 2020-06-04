@@ -1,6 +1,6 @@
 # Vue.js 101
 ## Intro
-Convert a static page to dynamic page with Vue.js.
+Turn html to dynamic page just with `CDN`.
 
 ### 1. Vue Instance
 ```
@@ -27,14 +27,24 @@ Vue.component()
 - Template, props, emit
 
 ## 102
+Instant prototyping with `vue`.
 
 ### 3. Single File Component
+```bash
+npm install -g @vue/cli
+npm install -g @vue/cli-service-global
+# or
+npm install -g @vue/cli @vue/cli-service-global
+```
+```bash
+vue serve
+```
+
+## 103
+Full project with `cli`.
 ```bash
 vue create <project>
 ```
 
-#### Topics
-- Vue CLI
-
 ## References
-[Vue.js](https://vuejs.org/), [Vue API](https://vuejs.org/v2/api/)
+[Vue.js](https://vuejs.org/), [Vue API](https://vuejs.org/v2/api/), [Vue CLI](https://cli.vuejs.org/guide/)
